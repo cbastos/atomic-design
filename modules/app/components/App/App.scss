@@ -1,0 +1,25 @@
+
+.folder {
+    @include elegant-icon('icon_folder');
+    font-size: 14px !important;
+}
+
+.table {
+    @include elegant-icon('icon_table');
+    font-size: 14px !important;
+}
+
+.group {
+    @include elegant-icon('icon_box-selected');
+    font-size: 14px !important;
+}
+
+.router {
+    @include elegant-icon('arrow_left-right_alt');
+    font-size: 14px !important;
+}
+
+.route {
+    @include elegant-icon('arrow_right');
+    font-size: 14px !important;
+}

@@ -1,0 +1,9 @@
+{
+    "translations": {
+        "Namespace.To.Concept": "Recurso en español",
+        "DATE_FORMAT": "Formato de fecha",
+        "CURRENCY": "Moneda"
+    },
+    "date": "DD/MM/YYYY",
+    "currency": "€"
+}

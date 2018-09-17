@@ -1,0 +1,17 @@
+{
+    "scripts": {
+        "development": [
+            "/vendors.dll.js",
+            "/startup.bundle.js"
+        ],
+        "production": [
+            "/vendors.dll.js",
+            "/startup.bundle.js"
+        ]
+    },
+    "css": {
+        "development": [],
+        "production": []
+    },
+    "favicon": "/dist/app/favicon.ico"
+}

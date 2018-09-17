@@ -1,0 +1,16 @@
+{
+    "source": "./modules",
+    "destination": "./dist/docs",
+    "plugins": [
+        {
+            "name": "esdoc-standard-plugin"
+        },
+        {
+            "name": "esdoc-jsx-plugin"
+        }
+    ],
+    "includes": [
+        ".*\\.js",
+        ".*\\.jsx"
+    ]
+}

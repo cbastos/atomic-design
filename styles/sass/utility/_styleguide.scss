@@ -1,0 +1,23 @@
+.sg {
+	@include soft--ends($spacing-unit);
+}
+
+.sg-nav {
+	ul {
+		margin-left: $spacing-unit;
+		margin-right: $spacing-unit;
+		list-style-type: disc;
+	}
+
+	li {
+		margin-top: $rel-spacing-unit--small;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		> ul {
+			margin-top: $rel-spacing-unit--small;
+		}
+	}
+}

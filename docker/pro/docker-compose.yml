@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  app-spa-spa-pro:
+    build: 
+      context: ../../
+      dockerfile: ./docker/pro/Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - overlay
+networks:
+  overlay:

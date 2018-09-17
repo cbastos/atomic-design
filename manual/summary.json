@@ -1,0 +1,12 @@
+[
+    {
+        "title": "Qué tiene el proyecto",
+        "file": "./project.md",
+        "children": []
+    },
+    {
+        "title": "Tareas de desarrollo",
+        "file": "./developmentTasks.md",
+        "children": []
+    }
+]

@@ -1,15 +1,17 @@
 import React from 'react';
-import { SomeComponent } from 'components';
+import { LeftPanel } from 'components';
+import { ManageUsers } from 'components';
 
 export class App extends React.Component {
-    componentDidCatch() {
+  componentDidCatch() {
 
-    }
-    render() {
-        return (
-            <div>
-                <SomeComponent />
-            </div >
-        );
-    }
+  }
+  render() {
+    return (
+      <div>
+        <LeftPanel></LeftPanel>
+        <ManageUsers></ManageUsers>
+      </div >
+    );
+  }
 }

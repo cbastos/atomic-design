@@ -1,7 +1,7 @@
 import { connect } from 'connector';
-import { SomeComponent } from './SomeComponent';
+import { ManageUsers } from './ManageUsers';
 
-export default connect(SomeComponent, ({ users: { list } }, actions) => ({
+export default connect(ManageUsers, ({ users: { list } }, actions) => ({
     users: list,
     requestUsers() { actions.REQUEST_GET_USERS(); },
     add(user) { actions.REQUEST_CREATE_USER({ user }); },

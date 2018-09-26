@@ -1,14 +1,34 @@
 
 import AppContainer from './App/AppContainer';
-import SomeComponentContainer from './App/components/SomeComponent/SomeComponentContainer';
+import {
+    LeftPanel
+} from './App/LeftPanel/LeftPanel';
+import {
+    Menu
+} from './App/LeftPanel/Menu/Menu';
+import ManageUsersContainer from './App/ManageUsers/ManageUsersContainer';
+import {
+    UsersFilters
+} from './App/ManageUsers/UsersFilters/UsersFilters';
+import {
+    UsersGrid
+} from './App/ManageUsers/UsersGrid/UsersGrid';
 
 export {
     AppContainer as App,
-    SomeComponentContainer as SomeComponent,
+    LeftPanel,
+    Menu,
+    ManageUsersContainer as ManageUsers,
+    UsersFilters,
+    UsersGrid,
 
 };
 export const components = {
     App: AppContainer,
-    SomeComponent: SomeComponentContainer,
+    LeftPanel,
+    Menu,
+    ManageUsers: ManageUsersContainer,
+    UsersFilters,
+    UsersGrid,
 
 };

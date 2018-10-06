@@ -1,0 +1,93 @@
+$bg-grid: $bg-secondary;
+$h-cell: rem(64px);
+$s-logo: rem(40px);
+$min-h-cell: 48px;
+$row-hover-color: $c-brand;
+$fc-header: $c-grey;
+
+.mds-grid {
+    border: none;
+
+    /* Cell */
+    .rt-td {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        height: $h-cell;
+        min-height: $min-h-cell;
+        padding-left: calc-gutter(2);
+        padding-right: calc-gutter(1);
+        font-size: fs(regular);
+        font-family: $ff-base;
+        line-height: $lh-base;
+        color: $fc-base;
+    }
+
+    .rt-thead {
+        .rt-th {
+            display: flex;
+            justify-content: flex-start;
+            border-right: none;
+            color: $fc-header;
+            font-size: fs(small);
+            font-weight: $fw-bold;
+            line-height: $lh-small;
+            padding: 0 calc-gutter(1);
+        }
+
+        &.-filters {
+            border-bottom: 0;
+
+            .rt-th {
+                border-right: none;
+                margin-top: calc-gutter(1, 'px');
+            }
+        }
+
+        &.-header {
+            box-shadow: none;
+            border-bottom: 0;
+        }
+    }
+
+    .rt-tbody {
+        margin-top: calc-gutter(1, 'px');
+
+        .rt-tr-group {
+            border-bottom: calc-gutter(0.5, 'px') solid transparent;
+        }
+
+        .rt-tr {
+            border-radius: $border-radius-small;
+            background: $bg-grid no-repeat;
+            background-image:
+                linear-gradient(to bottom, $row-hover-color, $row-hover-color),
+                linear-gradient(to bottom, transparent, transparent);
+            background-size: 4px 0, 4px 100%;
+            background-position: 0 0, 0 0;
+            transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+
+            &:hover {
+                background-size: 4px 100%, 4px 100%;
+            }
+        }
+
+        .rt-td {
+            border-right: none;
+        }
+    }
+
+    .has-center-align {
+        justify-content: center;
+    }
+
+    .has-right-align {
+        justify-content: start;
+    }
+
+    .is-logo-image {
+        border-radius: 50%;
+        height: $s-logo;
+    }
+}

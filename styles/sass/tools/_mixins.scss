@@ -1,0 +1,22 @@
+@mixin respond-to($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        @media (max-width: em(map-get($breakpoints, $breakpoint))) {
+            @content;
+        }
+    }
+
+    @else {
+        @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "+"Please make sure it is defined in `$breakpoints` map.";
+    }
+}
+
+%button-structure {
+    display: inline-flex;
+    cursor: pointer;
+    height: rem(40px);
+    line-height: rem(40px);
+    padding: 0 calc-gutter(5);
+    border-radius: calc-gutter(0.5);
+    border: 1px solid transparent;
+    font-size: fs(regular);
+}

@@ -17,7 +17,8 @@ module.exports = {
       components: path.resolve(__dirname, '../../modules/app/components/barrel.generated.js'),
       domain: path.resolve(__dirname, '../../modules/app/state'),
       services: path.resolve(__dirname, '../../modules/app/state/api'),
-      core: path.resolve(__dirname, '../../modules/core')
+      core: path.resolve(__dirname, '../../modules/core'),
+      '@styles': path.resolve('./styles/sass/scss')
     }
   },
   module: {

@@ -3,15 +3,13 @@ import { LeftPanel } from 'components';
 import { ManageUsers } from 'components';
 
 export class App extends React.Component {
-  componentDidCatch() {
-
-  }
+  componentDidCatch() {}
   render() {
     return (
       <div>
-        <LeftPanel></LeftPanel>
-        <ManageUsers></ManageUsers>
-      </div >
+        <LeftPanel />
+        <ManageUsers />
+      </div>
     );
   }
 }

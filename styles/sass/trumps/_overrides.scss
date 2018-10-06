@@ -1,0 +1,9 @@
+/* React Modal Overrides */
+$react-modal-overlay-bg: rgba(0, 0, 0, 0.4);
+
+.ReactModalPortal {
+    .ReactModal__Overlay {
+        background-color: $react-modal-overlay-bg !important;
+        z-index: z(default);
+    }
+}

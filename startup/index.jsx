@@ -11,7 +11,7 @@ import { logger, LogLevel, ErrorBoundary, localStorage, sessionStorage, currentC
 import 'core/exceptions/globalExceptionHandler';
 
 import { App } from '../modules/app/components/App/App';
-import '../styles/index.scss';
+import '../styles/sass/import.scss';
 
 // To comunicate with chrome dev tools
 const redux_dev_extension = window['__REDUX_DEVTOOLS_EXTENSION__'] &&

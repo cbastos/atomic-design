@@ -1,0 +1,90 @@
+@each $name, $value in $size-vars {
+    .fs-#{$name} {
+        font-size: rem($value);
+        line-height: $lh-base;
+    }
+}
+
+@each $pallete, $value in $pallete-colors {
+    $palleteName: $pallete;
+
+    @each $colorName, $colorValue in $value {
+        .bg-#{$palleteName}-#{$colorName} {
+            background-color: $colorValue;
+        }
+    }
+}
+
+@each $color, $value in $font-colors {
+    .fc-#{$color} {
+        color: $value;
+    }
+}
+
+@for $i from 0 through 5 {
+    .ml-#{$i} {
+        margin-left: rem(rem($gutter-base * $i));
+    }
+
+    .mr-#{$i} {
+        margin-right: rem($gutter-base * $i);
+    }
+
+    .mt-#{$i} {
+        margin-top: rem($gutter-base * $i);
+    }
+
+    .mb-#{$i} {
+        margin-bottom: rem($gutter-base * $i);
+    }
+
+    .pl-#{$i} {
+        padding-left: rem($gutter-base * $i);
+    }
+
+    .pr-#{$i} {
+        padding-right: rem($gutter-base * $i);
+    }
+
+    .pt-#{$i} {
+        padding-top: rem($gutter-base * $i);
+    }
+
+    .pb-#{$i} {
+        padding-bottom: rem($gutter-base * $i);
+    }
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
+.mds-overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: z(below);
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s, z-index 0s linear 0.01s;
+
+    &--colored {
+        background-color: $bg-overlay;
+    }
+
+    &.is-visible {
+        opacity: 1;
+        visibility: visible;
+        z-index: z(modal-overlay);
+    }
+}

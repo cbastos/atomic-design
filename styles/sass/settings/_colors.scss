@@ -1,0 +1,61 @@
+// *****  All global colors for our app  ***** \\
+
+/* Brand colors */
+$c-brand: #095686;
+$c-brand-light: #137cbd;
+
+/* Grey scale colors */
+$c-dark: #504d49;
+$c-mid-dark: #797979;
+$c-grey: #aeaeae;
+$c-soft-grey: #ddd;
+$c-light-grey: #f7f7f8;
+$c-bright: #fff;
+
+/* Toast colors */
+$c-success: #50ca50;
+$c-error: #e64c44;
+$c-info: #2f96b4;
+
+/* Alert colors */
+$c-invalid: #c30;
+$c-warning: #f90;
+
+/* Age colors */
+$c-age-1: #50e3c2;
+$c-age-2: #00acee;
+$c-age-3: #e9dc00;
+$c-age-4: #ff8200;
+$c-age-5: #cb4b5b;
+
+$pallete-colors: (
+    'main': (
+        brand: $c-brand,
+        brand-light: $c-brand-light
+    ),
+    'toast': (
+        success: $c-success,
+        error: $c-error,
+        info: $c-info
+    )
+);
+
+/* Font colors */
+$fc-base: $c-dark;
+$fc-secondary: $c-grey;
+
+$font-colors: (
+    base: $c-dark,
+    secondary: $fc-secondary,
+    brand: $c-brand,
+    error: $c-invalid,
+    warning: $c-warning
+);
+
+/* Layout colors */
+$bg-base: $c-light-grey;
+$bg-secondary: $c-bright;
+$box-shadow-base: 0 6px 16px 0 rgba(0, 0, 0, 0.1);
+$box-shadow-secondary: 0 7px 30px 4px rgba(0, 0, 0, 0.3);
+$bg-overlay:rgba(0, 0, 0, 0.4);
+

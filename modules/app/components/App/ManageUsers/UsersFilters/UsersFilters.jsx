@@ -1,36 +1,36 @@
 import React from 'react';
-
+import './UsersFilters.scss';
 export class UsersFilters extends React.Component {
   render() {
     return (
-      <fieldset>
-        <legend>Filtros</legend>
-        <label htmlFor="name">
-          Nombre
-            <input id="name"  />
-        </label>
-        <label htmlFor="email">
-          Email
-            <input id="email" />
-        </label>
-        <label htmlFor="role">
-          Email
-            <select>
+      <form className="users-filters">
+        <h4 className="mb-2">Filtros</h4>
+        <div className="field-wrapper">
+          <label htmlFor="name">Nombre</label>
+          <input id="name" />
+        </div>
+        <div className="field-wrapper">
+          <label htmlFor="email">Email</label>
+          <input id="email" />
+        </div>
+        <div className="field-wrapper">
+          <label htmlFor="role">Email</label>
+          <select>
             <option>Rol 1</option>
           </select>
-        </label>
-        <label htmlFor="role">
-          Fecha registro
-            <input type="date" />
-        </label>
-        <label htmlFor="role">
-          Activo
-          <input type="check" />
-        </label>
-        <button className="btn btn-primary">
-          Add user
-        </button>
-      </fieldset >
+        </div>
+        <div className="field-wrapper">
+          <label htmlFor="role">Fecha registro</label>
+          <input type="date" />
+        </div>
+        <div className="field-wrapper">
+          <label htmlFor="role">
+            Activo
+            <input type="checkbox" />
+          </label>
+        </div>
+        <button className="">Add user</button>
+      </form>
     );
   }
 }

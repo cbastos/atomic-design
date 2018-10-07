@@ -1,12 +1,13 @@
 import React from 'react';
+import './Menu.scss';
 
 export class Menu extends React.Component {
   render() {
     return (
-      <ul>
-        <li>Usuarios</li>
-        <li>Roles</li>
-        <li>Configuración</li>
+      <ul className="ad-menu">
+        <li className="ad-menu__item"><a>Usuarios</a></li>
+        <li className="ad-menu__item"><a>Roles</a></li>
+        <li className="ad-menu__item"><a>Configuración</a></li>
       </ul>
     );
   }

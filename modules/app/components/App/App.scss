@@ -1,31 +1,13 @@
-@import '@styles/utils.scss';
+@import '../../../../styles/sass/utils.scss';
 
-.folder {
-    @include elegant-icon('icon_folder');
+.l-app {
+    display: flex;
+    width: 100%;
+    height: 100%;
 
-    font-size: 14px !important;
-}
-
-.table {
-    @include elegant-icon('icon_table');
-
-    font-size: 14px !important;
-}
-
-.group {
-    @include elegant-icon('icon_box-selected');
-
-    font-size: 14px !important;
-}
-
-.router {
-    @include elegant-icon('arrow_left-right_alt');
-
-    font-size: 14px !important;
-}
-
-.route {
-    @include elegant-icon('arrow_right');
-
-    font-size: 14px !important;
+    &__main {
+        flex-grow: 1;
+        padding: calc-gutter(2) calc-gutter(5);
+        height: 100%;
+    }
 }

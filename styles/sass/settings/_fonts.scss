@@ -29,3 +29,23 @@ $font-url: '../fonts';
     font-weight: 500;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Lato';
+    src:
+        url('#{$font-url}/lato/lato-bold/lato-bold.woff2') format('woff2'),
+        url('#{$font-url}/lato/lato-bold/lato-bold.woff') format('woff'),
+        url('#{$font-url}/lato/lato-bold/lato-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src:
+        url('#{$font-url}/lato/lato-regular/lato-regular.woff2') format('woff2'),
+        url('#{$font-url}/lato/lato-regular/lato-regular.woff') format('woff'),
+        url('#{$font-url}/lato/lato-regular/lato-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,21 @@
+@import '../../../../../../styles/sass/utils.scss';
+$c-border: $c-grey;
+
+.users-filters {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    padding: calc-gutter(2);
+    border: 1px solid $c-border;
+    background-color: $bg-secondary;
+    border-radius: $border-radius-base;
+
+    h4 {
+        width: 100%;
+    }
+
+    .field-wrapper {
+        width: 20%;
+    }
+}

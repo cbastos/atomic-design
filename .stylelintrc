@@ -22,7 +22,6 @@
     "selector-attribute-quotes": "always",
     "selector-attribute-operator-space-before": "never",
     "declaration-block-trailing-semicolon": "always",
-    "declaration-colon-newline-after": "always-multi-line",
     "declaration-colon-space-before": "never",
     "declaration-colon-space-after": "always-single-line",
     "property-no-vendor-prefix": true,

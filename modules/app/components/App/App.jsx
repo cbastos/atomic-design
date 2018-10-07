@@ -1,14 +1,17 @@
 import React from 'react';
 import { LeftPanel } from 'components';
 import { ManageUsers } from 'components';
+import './App.scss';
 
 export class App extends React.Component {
   componentDidCatch() {}
   render() {
     return (
-      <div>
+      <div className="l-app">
         <LeftPanel />
-        <ManageUsers />
+        <main className="l-app__main">
+          <ManageUsers />
+        </main>
       </div>
     );
   }

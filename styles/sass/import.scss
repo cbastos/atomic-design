@@ -18,13 +18,13 @@
     styling for bare HTML elements (like H1, A, etc.). Unclassed HTML elements. */
 @import 'elements/core';
 @import 'elements/headings';
-@import 'elements/main';
 @import 'elements/paragraph';
 @import 'elements/anchor';
 
 /* Objects:
     class-based selectors which define undecorated design patterns.
     Objects can range from something as simple as a .wrapper element, to layout systems */
+@import 'objects/wrappers.scss';
 
 /* Components:
     specific UI components like buttons, inputs, tabs, grids etc... */

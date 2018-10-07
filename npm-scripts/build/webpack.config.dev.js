@@ -18,7 +18,7 @@ module.exports = {
       domain: path.resolve(__dirname, '../../modules/app/state'),
       services: path.resolve(__dirname, '../../modules/app/state/api'),
       core: path.resolve(__dirname, '../../modules/core'),
-      '@styles': path.resolve('./styles/sass/scss')
+      '@styles': path.resolve(__dirname,'../../styles/sass')
     }
   },
   module: {

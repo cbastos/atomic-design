@@ -1,7 +1,28 @@
-@import '../../../../../../styles/sass/utils.scss';
+@import "../../../../../../styles/sass/utils.scss";
 $c-border: $c-grey;
 
-.users-filters {
+.btn {
+  color: black;
+}
+
+.btn-danger {
+  background-color: red;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.p-btn-danger {
+  @extend .btn;
+  @extend .btn-danger;
+  @extend .w-100;
+}
+
+// -----------------------------------
+
+@mixin user-filters($btnDanger) {
+  .users-filters {
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
@@ -12,10 +33,17 @@ $c-border: $c-grey;
     border-radius: $border-radius-base;
 
     h4 {
-        width: 100%;
+      width: 100%;
     }
 
     .field-wrapper {
-        width: 20%;
+      width: 20%;
     }
+
+    &__add-user-button {
+      @extend #{$btnDanger};
+    }
+  }
 }
+
+@include user-filters(".p-btn-danger");

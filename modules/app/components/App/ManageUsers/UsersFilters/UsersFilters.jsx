@@ -29,7 +29,7 @@ export class UsersFilters extends React.Component {
             <input type="checkbox" />
           </label>
         </div>
-        <button className="">Add user</button>
+        <button className="user-filters__add-button">Add user</button>
       </form>
     );
   }

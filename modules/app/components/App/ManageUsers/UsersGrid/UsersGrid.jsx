@@ -1,6 +1,8 @@
 import React from 'react';
 import { Grid, GridColumn as Column } from '@progress/kendo-react-grid';
 
+import './UsersGrid.scss';
+
 export class UsersGrid extends React.Component {
   render() {
     return (

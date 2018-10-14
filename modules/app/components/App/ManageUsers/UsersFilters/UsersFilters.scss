@@ -1,49 +1,54 @@
-@import "../../../../../../styles/sass/utils.scss";
+@import '../../../../../../styles/sass/utils.scss';
+@import '../../../../../../styles/sass/components/ad-buttons.scss';
+@import '../../../../../../styles/sass/components/ad-forms.scss';
 $c-border: $c-grey;
 
-.btn {
-  color: black;
-}
-
-.btn-danger {
-  background-color: red;
-}
-
-.w-100 {
-  width: 100%;
-}
-
 .p-btn-danger {
-  @extend .btn;
-  @extend .btn-danger;
-  @extend .w-100;
+    @extend .ad-button;
+    @extend .ad-button-primary;
+}
+
+.p-form-input {
+    @extend .ad-input;
+    @extend .ad-input-skin;
 }
 
 // -----------------------------------
 
-@mixin user-filters($btnDanger) {
-  .users-filters {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    flex-wrap: wrap;
-    padding: calc-gutter(2);
-    border: 1px solid $c-border;
-    background-color: $bg-secondary;
-    border-radius: $border-radius-base;
+@mixin user-filters($btnDanger, $inputStyles) {
+    .users-filters {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        padding: calc-gutter(2);
+        border: 1px solid $c-border;
+        background-color: $bg-secondary;
+        border-radius: $border-radius-base;
 
-    h4 {
-      width: 100%;
-    }
+        h4 {
+            width: 100%;
+        }
 
-    .field-wrapper {
-      width: 20%;
-    }
+        .field-wrapper {
+            width: 20%;
+            padding: 0 calc-gutter(1) 0 0;
+            margin-bottom: calc-gutter(2);
+        }
 
-    &__add-user-button {
-      @extend #{$btnDanger};
+        &__button {
+            @extend #{$btnDanger};
+        }
+
+        &__input,
+        &__select {
+            @extend #{$inputStyles};
+        }
+
+        input[type='checkbox'] {
+            margin: calc-gutter(1) 0;
+        }
     }
-  }
 }
 
-@include user-filters(".p-btn-danger");
+@include user-filters('.p-btn-danger', '.p-form-input');

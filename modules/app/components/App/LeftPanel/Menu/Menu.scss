@@ -4,45 +4,49 @@ $border-hover-color: $c-brand;
 $option-hover: $c-brand;
 $c-border: $c-light-grey;
 
-.ad-menu {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    border-bottom: 1px solid $c-border;
-
-    &__item {
+@mixin ad-menu() {
+    .ad-menu {
         display: flex;
-        background: $bg-secondary no-repeat;
-        height: rem(48px);
-        border-top: 1px solid $c-border;
-        background-image:
-            linear-gradient(
+        flex-direction: column;
+        width: 100%;
+        border-bottom: 1px solid $c-border;
+
+        &__item {
+            display: flex;
+            background: $bg-secondary no-repeat;
+            height: rem(48px);
+            border-top: 1px solid $c-border;
+            background-image:
+ linear-gradient(
                 to bottom,
                 $option-hover,
                 $option-hover
             ),
-            linear-gradient(to bottom, transparent, transparent);
-        background-size: 4px 0, 100% 4px;
-        background-position: 100% 50%, 100% 50%;
-        transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
-
-        a {
-            color: $c-grey;
-            width: calc(100% - 4px);
-            height: 100%;
-            font-size: fs(regular);
-            line-height: rem(48px);
-            padding-left: calc-gutter(3);
-            cursor: pointer;
-        }
-
-        &:hover {
-            background-size: 4px 100%;
+                linear-gradient(to bottom, transparent, transparent);
+            background-size: 4px 0, 100% 4px;
+            background-position: 100% 50%, 100% 50%;
+            transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
 
             a {
-                color: $option-hover;
-                background-color: $bg-hover;
+                color: $c-grey;
+                width: calc(100% - 4px);
+                height: 100%;
+                font-size: fs(regular);
+                line-height: rem(48px);
+                padding-left: calc-gutter(3);
+                cursor: pointer;
+            }
+
+            &:hover {
+                background-size: 4px 100%;
+
+                a {
+                    color: $option-hover;
+                    background-color: $bg-hover;
+                }
             }
         }
     }
 }
+
+@include ad-menu();

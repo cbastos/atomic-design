@@ -1,5 +1,6 @@
 import React from 'react';
 import './UsersFilters.scss';
+
 export class UsersFilters extends React.Component {
   render() {
     return (
@@ -7,29 +8,33 @@ export class UsersFilters extends React.Component {
         <h4 className="mb-2">Filtros</h4>
         <div className="field-wrapper">
           <label htmlFor="name">Nombre</label>
-          <input id="name" />
+          <input className="users-filters__input" id="name" />
         </div>
         <div className="field-wrapper">
           <label htmlFor="email">Email</label>
-          <input id="email" />
+          <input className="users-filters__input" id="email" />
         </div>
         <div className="field-wrapper">
-          <label htmlFor="role">Email</label>
-          <select>
+          <label htmlFor="role">Rol</label>
+          <select className="users-filters__select" id="role">
             <option>Rol 1</option>
           </select>
         </div>
         <div className="field-wrapper">
-          <label htmlFor="role">Fecha registro</label>
-          <input type="date" />
+          <label htmlFor="registerDate">Fecha registro</label>
+          <input
+            className="users-filters__input"
+            type="date"
+            id="registerDate"
+          />
         </div>
         <div className="field-wrapper">
-          <label htmlFor="role">
-            Activo
-            <input type="checkbox" />
-          </label>
+          <label htmlFor="activo">Activo</label>
+          <input type="checkbox" id="activo" />
         </div>
-        <button className="user-filters__add-button">Add user</button>
+        <button type="submit" className="users-filters__button">
+          Add user
+        </button>
       </form>
     );
   }

@@ -1,0 +1,28 @@
+.ad-button {
+    display: inline-flex;
+    cursor: pointer;
+    height: rem(40px);
+    line-height: rem(40px);
+    padding: 0 calc-gutter(5);
+    border-radius: calc-gutter(0.5);
+    border: 1px solid transparent;
+    font-size: fs(regular);
+}
+
+.ad-button-primary {
+    background-color: $c-brand;
+    color: $c-bright;
+
+    &:hover {
+        background-color: $c-brand-light;
+    }
+
+    &:active {
+        background-color: $c-brand;
+    }
+
+    &:disabled {
+        color: $c-bright;
+        background-color: rgba($c-grey, 0.8);
+    }
+}

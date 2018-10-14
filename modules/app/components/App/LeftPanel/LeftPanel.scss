@@ -4,19 +4,23 @@ $aside-box-shadow: 1px 0 0 0 rgba(0, 0, 0, 0.1);
 $aside-width: 240px;
 $s-logo: rem(40px);
 
-.left-panel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: $aside-width;
-    height: 100%;
-    padding-top: calc-gutter(2);
-    background-color: $aside-bg-color;
-    box-shadow: $aside-box-shadow;
+@mixin left-panel() {
+    .left-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: $aside-width;
+        height: 100%;
+        padding-top: calc-gutter(2);
+        background-color: $aside-bg-color;
+        box-shadow: $aside-box-shadow;
 
-    &__logo {
-        width: $s-logo;
-        height: auto;
-        padding-bottom: calc-gutter(2);
+        &__logo {
+            width: $s-logo;
+            height: auto;
+            padding-bottom: calc-gutter(2);
+        }
     }
 }
+
+@include left-panel();

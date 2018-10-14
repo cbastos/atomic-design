@@ -1,0 +1,22 @@
+.ad-input {
+    height: rem(32px);
+    width: 100%;
+    border-radius: 2px;
+    padding-left: calc-gutter(1);
+}
+
+.ad-input-skin {
+    font-family: $ff-base;
+    font-size: fs(small);
+    line-height: rem(32px);
+    color: $fc-base;
+    border: 1px solid $c-grey;
+
+    &::placeholder {
+        color: $fc-secondary;
+    }
+
+    &:focus {
+        border: 1px solid $c-brand;
+    }
+}

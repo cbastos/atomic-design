@@ -1,0 +1,9 @@
+@import '../../../../../../styles/sass/utils.scss';
+
+.k-grid {
+    margin-top: calc-gutter(2);
+}
+
+.k-grid-header {
+    height: rem(40px);
+}

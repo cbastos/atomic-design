@@ -12,17 +12,13 @@ export class ManageUsers extends React.Component {
     this.props.requestUsers();
   }
 
-  componentWillReceiveProps({ users }) {
-    this.setState({ ...this.state, users });
-  }
-
   render() {
     const { className } = this.props;
     return (
       <Fragment>
         <h1>Usuarios</h1>
         <UsersFilters />
-        <UsersGrid users={this.state.users} />
+        <UsersGrid users={this.props.users} />
       </Fragment>
     );
   }
